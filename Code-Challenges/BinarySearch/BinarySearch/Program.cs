@@ -6,7 +6,7 @@ namespace BinarySearch
     {
         public static void Main(string[] args)
         {
-            BinarySearch();
+               //BinarySearch();
         }
 
         public static int BinarySearch(int[] binary, int key)
