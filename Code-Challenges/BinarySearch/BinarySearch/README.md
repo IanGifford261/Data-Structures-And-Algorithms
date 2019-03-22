@@ -1,6 +1,6 @@
 # BinarySearch
 
-**Author**: Phil Werner
+**Author**: Ian Gifford
 **Version**: 1.0.0
 
 ## Overview
