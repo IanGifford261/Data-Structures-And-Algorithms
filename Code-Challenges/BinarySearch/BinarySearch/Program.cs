@@ -14,7 +14,7 @@ namespace BinarySearch
         {
            int mP = binary.Length / 2;
             int lft = 0;
-            int rgt = binary.Length;
+            int rgt = binary.Length - 1;
 
             while (lft <= rgt)
 	        {
@@ -26,11 +26,11 @@ namespace BinarySearch
 
                 } else if (binary[mP] < key)
                 {
-                    lft = mP - 1;
+                    lft = mP + 1;
 
                 } else if (binary[mP] > key)
                 {
-                    rgt = mP + 1;
+                    rgt = mP - 1;
                 }   
 	        }
             return -1;
