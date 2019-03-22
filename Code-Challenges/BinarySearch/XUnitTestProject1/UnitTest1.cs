@@ -23,12 +23,12 @@ namespace XUnitTestProject1
             Assert.Equal(-1, testResult);
         }
 
-        //[Fact]
-        //public void TestForIfTheArrayIsEmpty()
-        //{
-        //    int[] numbers = new int[6];
-        //    int testResult = Program.BinarySearch(numbers, 5);
-        //    Assert.Equal(-1, testResult);
-        //}
+        [Fact]
+        public void TestForIfTheArrayIsEmpty()
+        {
+            int[] numbers = new int[6];
+            int testResult = Program.BinarySearch(numbers, 5);
+            Assert.Equal(-1, testResult);
+        }
     }
 }
