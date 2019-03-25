@@ -15,3 +15,4 @@ Microsoft Visual Studio Community
 Xunit
 
 ## Change Log
+V1.0 "Build Complete" 20 MAR 2019
