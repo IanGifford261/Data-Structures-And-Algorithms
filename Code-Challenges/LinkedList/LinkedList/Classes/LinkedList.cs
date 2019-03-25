@@ -10,18 +10,16 @@ namespace LinkedList.Classes
 
         public void Insert(int value)
         {                 
-            Node newHead = new Node(value);
-
+            Node node = new Node(value);
             if (Head == null)
             {
-                newHead = Head;
+                Head = node;
             }
             else
             {
-                Node.Next(value) = Head;
+                node.Next = Head;
+                Head = node;
             }
-
-
         }
 
         public void Includes()
