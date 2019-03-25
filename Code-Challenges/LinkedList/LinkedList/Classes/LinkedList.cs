@@ -10,20 +10,26 @@ namespace LinkedList.Classes
 
 
         public void Insert()
-        {
-            if (Head.Value is null)
+        {     
+            
+            if (Head == null)
             {
 
             }
+
         }
 
         public void Includes()
         {
 
+
+
         }
 
         public void Print()
         {
+
+
 
         }
 
