@@ -8,22 +8,31 @@ namespace LinkedList.Classes
     {        
         public Node Head { get; set; }
 
-
-        public void Insert()
-        {
-            if (Head.Value is null)
+        public void Insert(int value)
+        {                 
+            Node node = new Node(value);
+            if (Head == null)
             {
-
+                Head = node;
+            }
+            else
+            {
+                node.Next = Head;
+                Head = node;
             }
         }
 
         public void Includes()
         {
 
+
+
         }
 
         public void Print()
         {
+
+
 
         }
 
