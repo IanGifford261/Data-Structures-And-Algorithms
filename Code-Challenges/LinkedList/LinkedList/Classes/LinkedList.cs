@@ -9,10 +9,11 @@ namespace LinkedList.Classes
         public Node Head { get; set; }
         //While reviewing in class Amanda showed this, and set it makes the process easier.
         public Node Current { get; set; }
+         
          /// <summary>
-         /// 
+         /// Method to create a new head if none exists, otherwise inserts a new node at the beginning.
          /// </summary>
-         /// <param name="value"></param>
+         /// <param name="value"> user input</param>
         public void Insert(int value)
         {                 
             Node node = new Node(value);
@@ -28,10 +29,10 @@ namespace LinkedList.Classes
             }
         }
         /// <summary>
-        /// 
+        /// Method to search values
         /// </summary>
         /// <param name="value">Value to be searched within the Linked List</param>
-        /// <returns></returns>
+        /// <returns>If current value equals the searched value returns true, otherwise returns false</returns>
         public bool Includes(int value)
         {
             Current = Head;
@@ -45,10 +46,11 @@ namespace LinkedList.Classes
             }
             return false;
         }
+
         /// <summary>
-        /// 
+        /// Prints a list of values in nodes
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Prints to console the values in the nodes</returns>
         public List<int> Print()
         {
             //Learned this <int> in class, Amanda gave the approval to use like this.
@@ -63,8 +65,7 @@ namespace LinkedList.Classes
             Console.WriteLine(" ");
             Console.WriteLine(" ");
             Console.ReadLine();
-            return values;
-            
+            return values;     
         }
 
     }
