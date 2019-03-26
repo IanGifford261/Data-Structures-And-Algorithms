@@ -68,5 +68,28 @@ namespace LinkedList.Classes
             return values;     
         }
 
+        public void Append(int value)
+        {
+
+        }
+
+        public void InsertBefore(int val, int newVal)
+        {
+            Current = Head;
+            Node newInsert = new Node(newVal);
+            if (Current.Value == val)
+            {
+                Insert(val);
+            }
+            while (Current.Next != null)
+            {
+
+            }
+        }
+
+        public void InsertAfter()
+        {
+
+        }
     }
 }
