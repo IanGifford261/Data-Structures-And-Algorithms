@@ -68,9 +68,19 @@ namespace LinkedList.Classes
             return values;     
         }
 
-        public void Append(int value)
+        public void Append(int val)
         {
+            Node newInsertedNode = new Node(val);
 
+            Node Current = Head;
+            while(Current != null)
+            {
+                if (Current.Next == null)
+                {
+                    Current.Next = newInsertedNode;
+                }
+                Current = Current.Next;
+            }
         }
 
         public void InsertBefore(int val, int newVal)
