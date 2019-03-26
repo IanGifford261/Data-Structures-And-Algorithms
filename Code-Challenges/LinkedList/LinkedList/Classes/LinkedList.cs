@@ -39,9 +39,11 @@ namespace LinkedList.Classes
             return false;
         }
 
-        public int Print()
+        public List<int> Print()
         {
-
+            //Learned this <int> in class, Amanda gave the approval to use like this.
+            Current = Head;
+            List<int> values = new List<int>();
             while (Current.Next != null)
             {
                 values.Add(Current.Value);

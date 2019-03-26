@@ -2,11 +2,12 @@
 
 namespace LinkedList
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("It's a small world after all.");
+
         }
     }
 }
