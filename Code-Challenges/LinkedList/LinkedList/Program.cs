@@ -12,7 +12,7 @@ namespace LinkedList
 
             SLinkedList newList = new SLinkedList();
             newList.Insert(5);  
-            newList.Append();
+            //newList.Append();
             newList.Print();
 
 
