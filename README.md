@@ -4,4 +4,4 @@
 
 #### [BinarySearch](https://github.com/IanGifford261/Data-Structures-And-Algorithms/tree/master/Code-Challenges/BinarySearch)
 
-#### [LinkedList](https://github.com/IanGifford261/Data-Structures-And-Algorithms/tree/master/Code-Challenges/LinkedList)
+#### [LinkedList](https://github.com/IanGifford261/Data-Structures-And-Algorithms/tree/master/Code-Challenges/LinkedList/LinkedList)
