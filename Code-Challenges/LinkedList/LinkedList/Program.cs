@@ -7,7 +7,7 @@ namespace LinkedList
         public static void Main(string[] args)
         {
             Console.WriteLine("It's a small world after all.");
-
+            
         }
     }
 }
