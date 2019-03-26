@@ -84,9 +84,9 @@ namespace LinkedList.Classes
         }
 
         public void InsertBefore(int val, int newVal)
-        {
-            Current = Head;
+        {            
             Node newInsertedNode = new Node(newVal);
+            Node Current = Head;
             if (Current.Value == val)
             {
                 Insert(val);
@@ -103,8 +103,20 @@ namespace LinkedList.Classes
             }
         }
 
-        public void InsertAfter()
-        {
+        public void InsertAfter(int val, int newNode)
+        {          
+            Node newInsertedNode = new Node(newNode);
+            Node Current = Head;
+            while (Current.Next != null)
+            {
+                if (Current.Next.Value == val)
+                {
+                    newInsertedNode.Next = Current.Next;
+                    Current.Next = newInsertedNode;
+                    return;
+                }
+                Current = Current.Next;
+            }           
 
         }
     }
