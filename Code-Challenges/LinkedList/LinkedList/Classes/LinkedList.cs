@@ -76,14 +76,20 @@ namespace LinkedList.Classes
         public void InsertBefore(int val, int newVal)
         {
             Current = Head;
-            Node newInsert = new Node(newVal);
+            Node newInsertedNode = new Node(newVal);
             if (Current.Value == val)
             {
                 Insert(val);
             }
             while (Current.Next != null)
             {
-
+                if (Current.Next.Value == val)
+                {
+                    newInsertedNode.Next = Current.Next;
+                    Current.Next = newInsertedNode;
+                    return;
+                }
+                Current = Current.Next;
             }
         }
 
