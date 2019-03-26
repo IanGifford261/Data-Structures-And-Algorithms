@@ -9,21 +9,57 @@ namespace XUnitTestProject1
         [Fact]
         public void TestToInstantiateEmptyLinkedList()
         {
-            LinkedList newList = new LinkedList();
+            SLinkedList newList = new SLinkedList();
             Assert.Null(newList.Head);
         }
 
-        }
         [Fact]
-        public void TestIfValueIsFound()
+        public void TestIfInsertIntoLinkList()
         {
-            LinkedList newList = new LinkedList();
+            SLinkedList newList = new SLinkedList();
             newList.Insert(5);
-
+            Assert.Equal(5, newList.Head.Value);
         }
 
         [Fact]
-        public void ()
+        public void TestIfHeadPointsToFirstNode()
         {
+            SLinkedList newList = new SLinkedList();
+            newList.Insert(5);
+            newList.Insert(25);
+            Assert.Equal(5, newList.Head.Next.Value);
+        }
+
+        [Fact]
+        public void TestIfNodeHasMultiInserts()
+        {
+            SLinkedList newList = new SLinkedList();
+            newList.Insert(5);
+            newList.Insert(10);
+            newList.Insert(15);
+            Assert.Equal(15, newList.Head.Value);
+        }
+
+
+        [Fact]
+        public void TestIfIncludesCanReturnTrue()
+        {
+            SLinkedList newList = new SLinkedList();
+            newList.Insert(5);
+            newList.Insert(15);
+            newList.Insert(25);
+            Assert.True(newList.Includes(15));
+        }
+
+        [Fact]
+        public void TestIfIncludesCanReturnFalse()
+        {
+            SLinkedList newList = new SLinkedList();
+            newList.Insert(5);
+            newList.Insert(55);
+            newList.Insert(50);
+            Assert.False(newList.Includes(99));
+        }
+
     }
 }

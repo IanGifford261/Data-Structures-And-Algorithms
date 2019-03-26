@@ -4,12 +4,15 @@ using System.Text;
 
 namespace LinkedList.Classes
 {
-    public class LinkedList
+    public class SLinkedList
     {        
         public Node Head { get; set; }
         //While reviewing in class Amanda showed this, and set it makes the process easier.
         public Node Current { get; set; }
-
+         /// <summary>
+         /// 
+         /// </summary>
+         /// <param name="value"></param>
         public void Insert(int value)
         {                 
             Node node = new Node(value);
@@ -24,8 +27,12 @@ namespace LinkedList.Classes
                 Head = node;
             }
         }
-
-        public bool Includes()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public bool Includes(int value)
         {
             Current = Head;
             while (Current != null)
@@ -38,7 +45,10 @@ namespace LinkedList.Classes
             }
             return false;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public List<int> Print()
         {
             //Learned this <int> in class, Amanda gave the approval to use like this.
