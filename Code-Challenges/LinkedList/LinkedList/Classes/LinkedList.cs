@@ -28,20 +28,26 @@ namespace LinkedList.Classes
         public bool Includes()
         {
             Current = Head;
-            while(Current != null)
+            while (Current != null)
             {
-                if(Current.Value == value)
+                if (Current.Value == value)
+                {
+                    return true;
+                }
+                Current = Current.Next;
             }
-
-
-
+            return false;
         }
 
-        public void Print()
+        public int Print()
         {
 
-
-
+            while (Current.Next != null)
+            {
+                values.Add(Current.Value);
+                Current = Current.Next;
+            }
+            return values;
         }
 
     }
