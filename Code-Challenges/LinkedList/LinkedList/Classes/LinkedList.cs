@@ -30,7 +30,7 @@ namespace LinkedList.Classes
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">Value to be searched within the Linked List</param>
         /// <returns></returns>
         public bool Includes(int value)
         {
@@ -54,12 +54,17 @@ namespace LinkedList.Classes
             //Learned this <int> in class, Amanda gave the approval to use like this.
             Current = Head;
             List<int> values = new List<int>();
-            while (Current.Next != null)
+            while (Current != null)
             {
+                Console.Write($"{Current.Value} --->");
                 values.Add(Current.Value);
                 Current = Current.Next;
             }
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+            Console.ReadLine();
             return values;
+            
         }
 
     }
