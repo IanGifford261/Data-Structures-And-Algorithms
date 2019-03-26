@@ -11,7 +11,7 @@ namespace LinkedList.Classes
 
         public Node(int value)
         {
-            
+            Next = null;
             Value = value;
         }
         

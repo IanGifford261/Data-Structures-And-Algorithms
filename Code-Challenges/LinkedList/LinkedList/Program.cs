@@ -1,12 +1,22 @@
 ﻿using System;
-
+using LinkedList.Classes;
 namespace LinkedList
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("It's a small world after all.");
+            Console.WriteLine(" It's a small world after all.");
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+
+            SLinkedList newList = new SLinkedList();
+            newList.Insert(5);
+            newList.Insert(10);
+            newList.Insert(15);
+            newList.Print();
+
+            
         }
     }
 }
