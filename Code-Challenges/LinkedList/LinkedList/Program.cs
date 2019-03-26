@@ -11,12 +11,11 @@ namespace LinkedList
             Console.WriteLine(" ");
 
             SLinkedList newList = new SLinkedList();
-            newList.Insert(5);
-            newList.Insert(10);
-            newList.Insert(15);
+            newList.Insert(5);  
+            //newList.Append();
             newList.Print();
 
-            
+
         }
     }
 }
