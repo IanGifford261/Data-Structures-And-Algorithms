@@ -7,8 +7,7 @@
 A Challenge that displays the operation of how Linked lists work. Using Insert, Includes, Print, Append, InsertBefore, and InsertAfter
 
 ## Example
-### White Board
-![Proof of Life](https://github.com/IanGifford261/Data-Structures-And-Algorithms/blob/master/Code-Challenges/LinkedList/LinkedList/Screenshot%20(110).png)
+![Proof of Life](https://github.com/IanGifford261/Data-Structures-And-Algorithms/blob/master/Assets/Linked%20List%20Proof%20of%20life.png)
 
 ## Architecture
 Microsoft Visual Studio Community
