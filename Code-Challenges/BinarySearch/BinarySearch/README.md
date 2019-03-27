@@ -8,7 +8,7 @@ In this challenge I created a method the takes an array and search key that retu
 
 ## Example
 ### White Board
-![psuedo code](https://github.com/IanGifford261/Data-Structures-And-Algorithms/blob/master/Code-Challenges/BinarySearch/BinarySearch/Image%20from%20iOS.jpg)
+![psuedo code](https://github.com/IanGifford261/Data-Structures-And-Algorithms/blob/master/Assets/Image%20from%20iOS.jpg)
 
 ## Architecture
 Microsoft Visual Studio Community
