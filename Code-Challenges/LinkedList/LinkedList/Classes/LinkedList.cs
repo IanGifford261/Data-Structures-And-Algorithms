@@ -68,5 +68,92 @@ namespace LinkedList.Classes
             return values;     
         }
 
+        public void Append(int val)
+        {
+            Node newInsertedNode = new Node(val);
+
+            Node Current = Head;
+            while(Current != null)
+            {
+                if (Current.Next == null)
+                {
+                    Current.Next = newInsertedNode;
+                }
+                Current = Current.Next;
+            }
+        }
+
+        public void InsertBefore(int val, int newVal)
+        {            
+            Node newInsertedNode = new Node(newVal);
+            Node Current = Head;
+            if (Current.Value == val)
+            {
+                Insert(val);
+            }
+            while (Current.Next != null)
+            {
+                if (Current.Next.Value == val)
+                {
+                    newInsertedNode.Next = Current.Next;
+                    Current.Next = newInsertedNode;
+                    return;
+                }
+                Current = Current.Next;
+            }
+        }
+
+        public void InsertAfter(int val, int newNode)
+        {          
+            Node newInsertedNode = new Node(newNode);
+            Node Current = Head;
+            while (Current.Next != null)
+            {
+                if (Current.Next.Value == val)
+                {
+                    newInsertedNode.Next = Current.Next;
+                    Current.Next = newInsertedNode;
+                    return;
+                }
+                Current = Current.Next;
+            }           
+
+        }
+
+        public Node LinkKth(int k)
+        {
+            
+            Node Cont1 = Head;
+            Node Cont2 = Head;
+            int count = 0;
+
+            if (Head != null)
+            {
+                while(Cont1 != null)
+                {
+                    if (count < k)
+                    {
+                        Cont1 = Cont1.Next;
+                        count++;
+                    }
+                    else
+                    {
+                        Cont2 = Cont2.Next;
+                        Cont1 = Cont1.Next;
+                        count++;
+                    }
+                    
+                }
+                if (count < k)
+                {
+                    return null;
+                }
+                else
+                {
+                    return Cont2;
+                }              
+            }
+            return null;
+        }
     }
 }
