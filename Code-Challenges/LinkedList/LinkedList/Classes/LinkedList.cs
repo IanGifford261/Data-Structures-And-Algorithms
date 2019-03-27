@@ -119,5 +119,41 @@ namespace LinkedList.Classes
             }           
 
         }
+
+        public Node LinkKth(int k)
+        {
+            
+            Node Cont1 = Head;
+            Node Cont2 = Head;
+            int count = 0;
+
+            if (Head != null)
+            {
+                while(Cont1 != null)
+                {
+                    if (count < k)
+                    {
+                        Cont1 = Cont1.Next;
+                        count++;
+                    }
+                    else
+                    {
+                        Cont2 = Cont2.Next;
+                        Cont1 = Cont1.Next;
+                        count++;
+                    }
+                    
+                }
+                if (count < k)
+                {
+                    return null;
+                }
+                else
+                {
+                    return Cont2;
+                }              
+            }
+            return null;
+        }
     }
 }
