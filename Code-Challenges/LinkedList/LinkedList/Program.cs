@@ -11,8 +11,11 @@ namespace LinkedList
             Console.WriteLine(" ");
 
             SLinkedList newList = new SLinkedList();
-            newList.Insert(5);  
-            //newList.Append();
+            newList.Insert(5);
+            Console.WriteLine($"{newList}");
+            newList.Append(25);
+            newList.InsertAfter(17, 12);
+            newList.InsertBefore(25, 16);
             newList.Print();
 
 
