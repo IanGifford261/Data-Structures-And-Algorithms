@@ -23,15 +23,21 @@ namespace LL_merge
 
         public static Node MergeList(SLinkedList list1, SLinkedList list2)
         {
-            Node MainList = list1.Head;
-            Node SecList = list2.Head;
+            Node main = list1.Head;
+            Node secondary = list2.Head;
             
             while (list1.Head != null && list2.Head != null)
             {
+                Node temp = list1.Current.Next;
                 list1.Current.Next = list2.Current;
-                list2.Current = list1.Current.Next;
+                list2.Current = list2.Current.Next;
+                list1.Current = temp;
                 
-                if ()
+                if (list1.Current != null)
+                {
+                    main = secondary.Next;
+                    secondary = main.Next;
+                }
                 
             }
             return list1.Head;
