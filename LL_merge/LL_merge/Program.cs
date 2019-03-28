@@ -28,8 +28,10 @@ namespace LL_merge
             
             while (list1.Head != null && list2.Head != null)
             {
-                list2.Current = list1.Head.Next;
-                list1.Head.Next = list2.Current;
+                list1.Current.Next = list2.Current;
+                list2.Current = list1.Current.Next;
+                
+                if ()
                 
             }
             return list1.Head;
