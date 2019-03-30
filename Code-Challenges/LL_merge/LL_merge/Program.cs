@@ -17,8 +17,9 @@ namespace LL_merge
             list2.Insert(5);
             list2.Insert(6);
 
-            Node resultMerge = MergeList(list1, list2);
-            Console.WriteLine(resultMerge.Value);
+            MergeList(list1, list2);
+            //Node resultMerge = MergeList(list1, list2);
+            //Console.WriteLine(resultMerge.Value);
         }
 
         public static Node MergeList(SLinkedList list1, SLinkedList list2)
