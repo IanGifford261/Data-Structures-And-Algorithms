@@ -32,6 +32,7 @@ namespace StacksanQueues.Classes
 
             Head = Head.Next;
             temporaryNode.Next = null;
+            return temporaryNode;
         }
 
     }
