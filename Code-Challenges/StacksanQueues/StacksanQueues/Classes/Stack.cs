@@ -6,33 +6,38 @@ namespace StacksanQueues.Classes
 {
     public class Stack
     {
-        public Node Head { get; set; }
+        public Node Top { get; set; }
 
-        public Stack (Node node)
+        public Stack()
         {
-            Head = node;
+            Top = null;
         }
 
         public void PushNode(Node newNode)
         {
-            newNode.Next = Head;
-            Head = newNode;
+            newNode.Next = Top;
+            Top = newNode;
         }
 
         public void PushValue(int val)
         {
             Node push = new Node(val);
-            push.Next = Head;
-            Head = push;
+            push.Next = Top;
+            Top = push;
         }
 
         public Node PopOff()
         {
-            Node temporaryNode = Head;
+            Node temporaryNode = Top;
 
-            Head = Head.Next;
+            Top = Top.Next;
             temporaryNode.Next = null;
             return temporaryNode;
+        }
+
+        public Node Peek()
+        {
+            return Top;
         }
 
     }
