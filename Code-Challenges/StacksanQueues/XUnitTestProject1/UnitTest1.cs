@@ -7,6 +7,12 @@ namespace XUnitTestProject1
     public class UnitTest1
     {
         [Fact]
+        public void TestForEmptyStack()
+        {
+            Stack emptyTest = new Stack();
+            Assert.Null(emptyTest.Top);
+        }
+        [Fact]
         public void TestForPushOntoStack()
         {
             Stack stackTest = new Stack();
