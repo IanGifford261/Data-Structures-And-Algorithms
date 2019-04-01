@@ -9,9 +9,10 @@ namespace StacksanQueues.Classes
         public Node Front { get; set; }
         public Node Back { get; set; }
 
-        public Queue(Node node)
+        public Queue()
         {            
-            Front = node;
+            Front = null;
+            Back = null;
         }
 
 

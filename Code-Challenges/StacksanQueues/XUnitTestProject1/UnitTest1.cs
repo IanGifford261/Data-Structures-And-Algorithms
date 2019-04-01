@@ -12,6 +12,14 @@ namespace XUnitTestProject1
             Stack emptyTest = new Stack();
             Assert.Null(emptyTest.Top);
         }
+
+        [Fact]
+        public void TestForEmptyQueue()
+        {
+            Queue emptyTest = new Queue();
+            Assert.Null(emptyTest.Front);
+        }
+
         [Fact]
         public void TestForPushOntoStack()
         {
