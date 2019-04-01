@@ -13,6 +13,11 @@ namespace StacksanQueues.Classes
             Head = node;
         }
 
-
+        public void PushInto(int val)
+        {
+            Node push = new Node(val);
+            push.Next = Head;
+            Head = push;
+        }
     }
 }
