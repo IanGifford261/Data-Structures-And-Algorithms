@@ -26,6 +26,13 @@ namespace StacksanQueues.Classes
             Head = push;
         }
 
+        public Node PopOff()
+        {
+            Node temporaryNode = Head;
+
+            Head = Head.Next;
+            temporaryNode.Next = null;
+        }
 
     }
 }
