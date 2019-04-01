@@ -6,5 +6,6 @@ namespace StacksanQueues.Classes
 {
     public class Stack
     {
+
     }
 }
