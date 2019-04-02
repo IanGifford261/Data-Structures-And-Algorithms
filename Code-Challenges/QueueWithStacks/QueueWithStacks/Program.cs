@@ -1,5 +1,6 @@
 ﻿using System;
 using QueueWithStacks.Classes;
+using StacksanQueues.Classes;
 
 namespace QueueWithStacks
 {
