@@ -4,8 +4,8 @@
 ## Challenge
 Implement a Queue using two stacks.
 
-## Example
-![Proof of Life]()
+## Example/Whiteboard image
+![White Board](https://github.com/IanGifford261/Data-Structures-And-Algorithms/blob/master/Assets/spence%20and%20ian%20whiteboard.jpg)
 
 ## Architecture
 Microsoft Visual Studio Community
