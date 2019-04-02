@@ -27,6 +27,7 @@ namespace StacksanQueues.Classes
             Back.Next = newNode;
             Back = newNode;
         }
+
         public Node Dequeue()
         {
             Node tempNode = Front;
