@@ -15,7 +15,7 @@ namespace QueueWithStacks.Classes
             S1.PushValue(value);
         }
 
-        public void Dequeue()
+        public Stack Dequeue()
         {
             S2.PopOff();
 
@@ -23,7 +23,7 @@ namespace QueueWithStacks.Classes
             {
                 S2.PushValue(Stack.S1.PopOff());
             }
-
+            return S2.PopOff();
         }
     }
 }
