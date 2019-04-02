@@ -7,18 +7,22 @@ namespace QueueWithStacks.Classes
 {
     public class SecondaryQueue : Stack
     {
-        public Node Front { get; set; }
-        public Node Back { get; set; }
+        public Stack S1 { get; set; }
+        public Stack S2 { get; set; }
 
         public void Enqueue(int value)
         {
-            Node newNode = new Node(value);
-            Back.Next = newNode;
-            Back = newNode;
+            S1.PushValue;
         }
 
         public void Dequeue()
         {
+            S2.PopOff;
+
+            if(S2 == null)
+            {
+                S2.PushValue(S1.PopOff);
+            }
 
         }
     }
