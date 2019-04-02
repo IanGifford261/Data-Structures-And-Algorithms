@@ -15,6 +15,19 @@ namespace StacksanQueues.Classes
             Back = null;
         }
 
+        public Queue(Node node)
+        {
+            Front = node;
+            Back = node;
+        }
+
+        public void Enqueue(int value)
+        {
+            Node newNode = new Node(value);
+            Back.Next = newNode;
+            Back = newNode;
+        }
+
 
 
     }

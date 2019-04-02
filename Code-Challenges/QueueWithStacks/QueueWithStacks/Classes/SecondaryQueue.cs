@@ -10,9 +10,11 @@ namespace QueueWithStacks.Classes
         public Node Front { get; set; }
         public Node Back { get; set; }
 
-        public void Enqueue()
+        public void Enqueue(int value)
         {
-
+            Node newNode = new Node(value);
+            Back.Next = newNode;
+            Back = newNode;
         }
 
         public void Dequeue()
