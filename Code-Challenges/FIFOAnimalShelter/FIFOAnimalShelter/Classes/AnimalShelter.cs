@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using FIFOAnimalShelter.Classes;
 
 namespace FIFOAnimalShelter.Classes
 {
-    class AnimalShelter
+    public class AnimalShelter
     {
     }
 }
