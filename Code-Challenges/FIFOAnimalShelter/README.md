@@ -9,6 +9,11 @@ An excercise that demonstrates FIFO with a class called AnimalShelter which hold
 ## WhiteBoard Example
 ![Whiteboard](https://github.com/IanGifford261/Data-Structures-And-Algorithms/blob/master/Assets/spenceandian2.jpg)
 
+- [X] Add AnimalShelter/Animal/Dog/Cat classes respectively
+- [X] Add queue methods
+- [X] Constructors
+- [] finished
+
 ## Architecture
 Microsoft Visual Studio Community
 Xunit
