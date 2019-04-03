@@ -15,15 +15,15 @@ namespace QueueWithStacks.Classes
             S1.PushValue(value);
         }
 
-        public Stack Dequeue()
+        public int Dequeue()
         {
             S2.PopOff();
 
             if(S2 == null)
             {
-                S2.PushValue(Stack.S1.PopOff());
+                S2.PushValue(S1.PopOff().Val);
             }
-            return S2.PopOff();
+            return S2.PopOff().Val;
         }
     }
 }
