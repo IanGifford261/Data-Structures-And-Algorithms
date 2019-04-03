@@ -10,7 +10,7 @@ namespace FIFOAnimalShelter.Classes
     {
         public static void TheShelter()
         {
-            Animal dog = new Animal(Animal.WoofMeow.dog);
+            
             Animal cat = new Animal(Animal.WoofMeow.cat);
         }
         

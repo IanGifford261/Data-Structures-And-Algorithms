@@ -8,6 +8,6 @@ namespace FIFOAnimalShelter.Classes
 {
    public class Dog
     {
-
+        Animal dog = new Animal(Animal.WoofMeow.dog);
     }
 }
