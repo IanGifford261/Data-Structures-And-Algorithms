@@ -13,8 +13,8 @@ namespace FIFOAnimalShelter.Classes
 
         public Animal (Animal woofMeow)
         {
-
-        }
-
+            Val = woofMeow;
+            Next = null;
+        }        
     }
 }
