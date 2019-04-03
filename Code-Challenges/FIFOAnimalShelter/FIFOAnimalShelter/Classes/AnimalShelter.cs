@@ -8,12 +8,24 @@ namespace FIFOAnimalShelter.Classes
     public class AnimalShelter
     {
         public Animal Front { get; set; }
-        public Animal Rear { get; set; }
+        public Animal Back { get; set; }
 
-        public Shelter(Animal animal)
+        public AnimalShelter(Animal animal)
         {
             Front = animal;
-            Rear = animal;
+            Back = animal;
+        }
+
+        public void Enqueue(Animal woofMeow)
+        {
+            Animal animal = woofMeow;
+
+            if (Front == null)
+            {
+                Front = animal;
+                Back = animal;
+            }
+            Back.Next = animal;
         }
     }
 }

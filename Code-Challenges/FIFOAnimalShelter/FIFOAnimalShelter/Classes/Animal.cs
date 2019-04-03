@@ -8,7 +8,13 @@ namespace FIFOAnimalShelter.Classes
 {
    public class Animal
     {
+        public Animal Val { get; set; }
+        public Animal Next { get; set; }
 
+        public Animal (Animal woofMeow)
+        {
+
+        }
 
     }
 }
