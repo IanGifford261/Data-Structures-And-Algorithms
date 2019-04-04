@@ -1,12 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MultiBracketValidation
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine(" MULTIBRACKETVALIDATION!");
+        }
+
+        public static bool MultiBracketVal(string input)
+        {
+            Stack newStack = new Stack();
+            bool validBracket = MultiBracketVal("([{}])");
+
+            try
+            {
+
+            }
         }
     }
 }
