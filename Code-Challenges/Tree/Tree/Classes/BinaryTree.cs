@@ -19,6 +19,11 @@ namespace Tree.Classes
             }
 
             PreorderRecurs(Root);
+            new int[] arr = new int[ValueList.Count];
+            for (int i = 0; i < ValueList.Count; i++)
+            {
+                ValueList = 
+            }
 
         }
 
