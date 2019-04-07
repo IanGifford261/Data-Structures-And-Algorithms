@@ -9,7 +9,7 @@ namespace Tree.Classes
     {
         public static Node Root { get; set; }
         public static List<int> ValueList = new List<int>();
-        //Pre
+        
         public static int[] PreOrder()
         {
             if(ValueList.Count > 0)
@@ -43,7 +43,6 @@ namespace Tree.Classes
             }
         }
 
-        //In
         public static int[] InOrder()
         {
             if (ValueList.Count > 0)
@@ -79,7 +78,6 @@ namespace Tree.Classes
 
         }
 
-        //Post
         public static int[] PostOrder()
         {
             if (ValueList.Count > 0)
