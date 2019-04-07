@@ -14,22 +14,33 @@ namespace Tree.Classes
         {
             if(ValueList.Count > 0)
             {
-                ValueList.Clear();
-            
+                ValueList.Clear();           
             }
 
             PreorderRecurs(Root);
-            new int[] arr = new int[ValueList.Count];
-            for (int i = 0; i < ValueList.Count; i++)
+            int[] arr = new int[ValueList.Count];
+            int i = 0;
+            foreach (var item in ValueList)
             {
-                ValueList = 
+                arr[i] = item;
+                i++;
             }
+            return arr;
 
         }
 
         public static void PreorderRecurs(Node node)
         {
-            ValueList.Add.node.
+            ValueList.Add(node.Value);
+
+            if (node.Left != null)
+            {
+                PreorderRecurs(node.Left);
+            }
+            if (node.Right != null)
+            {
+                PreorderRecurs(node.Right);
+            }
         }
 
         //In
