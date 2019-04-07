@@ -18,6 +18,18 @@ namespace Tree.Classes
                 return;
             }
 
+            Node Current = Root;
+            while (true)
+            {
+                if (Current.Value > val && Current.Left != null)
+                {
+                    Current = Current.Left;
+                }
+                if (Current.Value < val && Current.Right != null)
+                {
+                    Current = Current.Right;
+                }
+            }
 
 
         }
