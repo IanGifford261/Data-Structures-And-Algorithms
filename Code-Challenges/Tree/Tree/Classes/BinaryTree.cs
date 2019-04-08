@@ -19,10 +19,11 @@ namespace Tree.Classes
         {
             Root = new Node(val);
         }
+
         /// <summary>
-        /// 
+        /// Pre order traversal of a BT
         /// </summary>
-        /// <returns></returns>
+        /// <returns> Returns arr </returns>
         public int[] PreOrder()
         {
             if(ValueList.Count > 0)
@@ -43,9 +44,9 @@ namespace Tree.Classes
         }
 
         /// <summary>
-        /// 
+        /// Recursion of Preorder
         /// </summary>
-        /// <param name="node"></param>
+        /// <param name="node"> name of the Node Arg.</param>
         public void PreorderRecurs(Node node)
         {
             ValueList.Add(node.Value);
@@ -61,9 +62,9 @@ namespace Tree.Classes
         }
 
         /// <summary>
-        /// 
+        /// In order traversal.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>returns arr of valuelist</returns>
         public int[] InOrder()
         {
             if (ValueList.Count > 0)
@@ -84,7 +85,7 @@ namespace Tree.Classes
         }
 
         /// <summary>
-        /// 
+        /// Recursion of In order
         /// </summary>
         /// <param name="node"></param>
         public void InOrderRecurs(Node node)
@@ -104,9 +105,9 @@ namespace Tree.Classes
         }
 
         /// <summary>
-        /// 
+        /// Post Order Traversal of BT
         /// </summary>
-        /// <returns></returns>
+        /// <returns>returns arr of valuelist</returns>
         public int[] PostOrder()
         {
             if (ValueList.Count > 0)

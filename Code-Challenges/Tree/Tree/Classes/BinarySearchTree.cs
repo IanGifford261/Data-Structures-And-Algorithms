@@ -8,10 +8,11 @@ namespace Tree.Classes
     public class BinarySearchTree
     {
         public Node Root { get; set; }
+
         /// <summary>
-        /// 
+        /// Adds a value to the tree, if no root exists, it creates a new one with the input value as current.
         /// </summary>
-        /// <param name="val"></param>
+        /// <param name="val">Number input</param>
         public void Add(int val)
         {
             Node newNode = new Node(val);
@@ -23,7 +24,7 @@ namespace Tree.Classes
             }
 
             Node Current = Root;
-            while (true)
+            while (Current != null)
             {
                 if (Current.Value > val)
                 {
@@ -45,8 +46,9 @@ namespace Tree.Classes
                 }
             }
         }
+
         /// <summary>
-        /// 
+        /// Loops throught to find a value within the tree.
         /// </summary>
         /// <param name="val"></param>
         /// <returns></returns>

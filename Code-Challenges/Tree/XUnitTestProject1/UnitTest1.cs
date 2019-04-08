@@ -22,11 +22,14 @@ namespace XUnitTestProject1
         }
 
         //[Fact]
-        //public void TestForEmptyTreeInstantiation()
+        //public void TestForAddLeftAndRightChild()
         //{
-        //    BinaryTree test = new BinaryTree();
-        //    List<int> testing = new List<int> { };
-        //    Assert.Equal(testing, test.)
+        //    BinarySearchTree test = new BinarySearchTree();
+        //    //test.Root = new Node(10);
+        //    test.Add(10);
+        //    test.Add(5);
+
+        //    Assert.Equal(5, test.Root.Left.Value);
         //}
 
         //[Fact]
