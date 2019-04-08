@@ -7,10 +7,23 @@ namespace Tree.Classes
 {
     public class BinaryTree
     {
-        public static Node Root { get; set; }
-        public static List<int> ValueList = new List<int>();
+        public Node Root { get; set; }
+        public List<int> ValueList = new List<int>();
+
+        public BinaryTree()
+        {
+
+        }
         
-        public static int[] PreOrder()
+        public BinaryTree(int val)
+        {
+            Root = new Node(val);
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public int[] PreOrder()
         {
             if(ValueList.Count > 0)
             {
@@ -29,7 +42,11 @@ namespace Tree.Classes
 
         }
 
-        public static void PreorderRecurs(Node node)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="node"></param>
+        public void PreorderRecurs(Node node)
         {
             ValueList.Add(node.Value);
 
@@ -43,7 +60,11 @@ namespace Tree.Classes
             }
         }
 
-        public static int[] InOrder()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public int[] InOrder()
         {
             if (ValueList.Count > 0)
             {
@@ -62,7 +83,11 @@ namespace Tree.Classes
 
         }
 
-        public static void InOrderRecurs(Node node)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="node"></param>
+        public void InOrderRecurs(Node node)
         {
             if (node.Left != null)
             {
@@ -78,7 +103,11 @@ namespace Tree.Classes
 
         }
 
-        public static int[] PostOrder()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public int[] PostOrder()
         {
             if (ValueList.Count > 0)
             {
@@ -97,7 +126,11 @@ namespace Tree.Classes
 
         }
 
-        public static void PostOrderRecurs(Node node)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="node"></param>
+        public void PostOrderRecurs(Node node)
         {
             if (node.Left != null)
             {

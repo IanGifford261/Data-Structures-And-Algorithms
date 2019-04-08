@@ -7,9 +7,12 @@ namespace Tree.Classes
 {
     public class BinarySearchTree
     {
-        public static Node Root { get; set; }
-
-        public static void Add(int val)
+        public Node Root { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="val"></param>
+        public void Add(int val)
         {
             Node newNode = new Node(val);
 
@@ -42,8 +45,12 @@ namespace Tree.Classes
                 }
             }
         }
-        
-        public static bool Contains(int val)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="val"></param>
+        /// <returns></returns>
+        public bool Contains(int val)
         {
             Node current = Root;
             while (current.Value != val)
