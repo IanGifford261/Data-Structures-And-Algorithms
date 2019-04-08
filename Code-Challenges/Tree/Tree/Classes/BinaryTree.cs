@@ -7,10 +7,24 @@ namespace Tree.Classes
 {
     public class BinaryTree
     {
-        public static Node Root { get; set; }
-        public static List<int> ValueList = new List<int>();
+        public Node Root { get; set; }
+        public List<int> ValueList = new List<int>();
+
+        public BinaryTree()
+        {
+
+        }
         
-        public static int[] PreOrder()
+        public BinaryTree(int val)
+        {
+            Root = new Node(val);
+        }
+
+        /// <summary>
+        /// Pre order traversal of a BT
+        /// </summary>
+        /// <returns> Returns arr </returns>
+        public int[] PreOrder()
         {
             if(ValueList.Count > 0)
             {
@@ -29,7 +43,11 @@ namespace Tree.Classes
 
         }
 
-        public static void PreorderRecurs(Node node)
+        /// <summary>
+        /// Recursion of Preorder
+        /// </summary>
+        /// <param name="node"> name of the Node Arg.</param>
+        public void PreorderRecurs(Node node)
         {
             ValueList.Add(node.Value);
 
@@ -43,7 +61,11 @@ namespace Tree.Classes
             }
         }
 
-        public static int[] InOrder()
+        /// <summary>
+        /// In order traversal.
+        /// </summary>
+        /// <returns>returns arr of valuelist</returns>
+        public int[] InOrder()
         {
             if (ValueList.Count > 0)
             {
@@ -62,7 +84,11 @@ namespace Tree.Classes
 
         }
 
-        public static void InOrderRecurs(Node node)
+        /// <summary>
+        /// Recursion of In order
+        /// </summary>
+        /// <param name="node"></param>
+        public void InOrderRecurs(Node node)
         {
             if (node.Left != null)
             {
@@ -78,7 +104,11 @@ namespace Tree.Classes
 
         }
 
-        public static int[] PostOrder()
+        /// <summary>
+        /// Post Order Traversal of BT
+        /// </summary>
+        /// <returns>returns arr of valuelist</returns>
+        public int[] PostOrder()
         {
             if (ValueList.Count > 0)
             {
@@ -97,7 +127,11 @@ namespace Tree.Classes
 
         }
 
-        public static void PostOrderRecurs(Node node)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="node"></param>
+        public void PostOrderRecurs(Node node)
         {
             if (node.Left != null)
             {
