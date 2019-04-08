@@ -111,7 +111,5 @@ namespace Tree.Classes
             ValueList.Add(node.Value);
         }
 
-    }
-
-    }
+    }    
 }
