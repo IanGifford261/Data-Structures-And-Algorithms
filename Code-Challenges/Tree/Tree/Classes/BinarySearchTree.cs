@@ -38,19 +38,30 @@ namespace Tree.Classes
                     {
                         Current.Right = newNode;
                     }
-
                     Current = Current.Right;
                 }
             }
         }
         
-        public static bool Contains(Node current, int val)
+        public static bool Contains(int val)
         {
-            if (val == current.Value)
+            Node current = Root;
+            while (current.Value != val)
             {
-                return true;
+                if (val == current.Value)
+                {
+                    return true;
+                }
+                if (current.Value > val && current.Right != null)
+                {
+                    current = current.Right;                    
+                }                          
+                if (current.Value < val && current.Left != null)
+                {
+                    current = current.Left;
+                }
             }
-
+            return false;
         }
     }
 }
