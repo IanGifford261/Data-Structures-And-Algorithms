@@ -1,4 +1,4 @@
-# LinkedList
+# FizzBussTree
 
 **Author**: Ian Gifford
 **Version**: 1.0.0
