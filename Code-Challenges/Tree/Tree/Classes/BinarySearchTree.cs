@@ -72,5 +72,12 @@ namespace Tree.Classes
             }
             return false;
         }
+
+        public void BreadthFirst()
+        {
+            Node queue = 
+            
+
+        }
     }
 }
