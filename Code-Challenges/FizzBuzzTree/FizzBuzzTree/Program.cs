@@ -8,5 +8,10 @@ namespace FizzBuzzTree
         {
             Console.WriteLine("Hello World!");
         }
+
+        public void FizzBuzzTree()
+        {
+
+        }
     }
 }
