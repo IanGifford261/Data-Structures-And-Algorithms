@@ -9,8 +9,8 @@ A Challenge that implements Binary search tree class with and Add and Contains m
 - [X] Binary Tree traversal methods with recursion
 - [x] BST add and contains
 
-## Example
-![]()
+## Breadth First Whiteboard
+![breadth first](https://github.com/IanGifford261/Data-Structures-And-Algorithms/blob/master/Assets/IanandCory2.jpg)
 
 ## Architecture
 Microsoft Visual Studio Community
