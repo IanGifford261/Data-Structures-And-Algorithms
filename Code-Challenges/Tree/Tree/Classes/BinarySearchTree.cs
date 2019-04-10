@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -73,11 +74,26 @@ namespace Tree.Classes
             return false;
         }
 
-        public void BreadthFirst()
+        public List<int> BreadthFirst()
         {
-            Node queue = 
-            
+            Queue<Node> queue = new Queue<Node>();
+            List<int> qList = new List<int>();
+            queue.Enqueue(Root);
 
+            while (queue.Count > 0)
+            {
+                Node temp = queue.Dequeue();
+                if (temp.Right != null)
+                {
+                    queue.Enqueue(temp.Right);
+                }
+                if (temp.Left != null)
+                {
+                    queue.Enqueue(temp.Left);
+                }
+                qList.Add(temp.Value);
+            }
+            return qList;
         }
     }
 }
