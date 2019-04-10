@@ -20,3 +20,6 @@ Xunit
 ## Change Log
 V1.0 *building out* 08 APR 2019
 V1.1 *continuing to expand tree* 10 APR 2019
+
+#### Collabs
+Jason Burns
