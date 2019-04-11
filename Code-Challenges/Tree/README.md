@@ -9,7 +9,7 @@ A Challenge that implements Binary search tree class with and Add and Contains m
 - [X] Binary Tree traversal methods with recursion
 - [X] BST add and contains
 - [X] Add Breadth first traversal
-- [] Find the maximum value
+- [X] Find the maximum value
 
 ## Breadth First Whiteboard
 ![breadth first](https://github.com/IanGifford261/Data-Structures-And-Algorithms/blob/master/Assets/IanandCory2.jpg)
