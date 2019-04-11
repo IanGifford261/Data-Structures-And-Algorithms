@@ -13,6 +13,9 @@ A Challenge that implements Binary search tree class with and Add and Contains m
 ## Breadth First Whiteboard
 ![breadth first](https://github.com/IanGifford261/Data-Structures-And-Algorithms/blob/master/Assets/IanandCory2.jpg)
 
+## Maximum BT Whiteboard
+![Max Tree](https://github.com/IanGifford261/Data-Structures-And-Algorithms/blob/master/Assets/coryandIan3.jpg)
+
 ## Architecture
 Microsoft Visual Studio Community
 Xunit
