@@ -9,7 +9,7 @@ namespace sorts
             Console.WriteLine("Hello World!");
         }
 
-        public int[] InsertionSort(int[] arr)
+        public static int[] InsertionSort(int[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
             {
