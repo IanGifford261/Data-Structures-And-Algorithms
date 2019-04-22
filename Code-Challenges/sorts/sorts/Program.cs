@@ -6,9 +6,13 @@ namespace sorts
     {
         public static void Main(string[] args)
         {
-            int[] array = { 1, 2, 3, 5, 7 };
-            InsertionSort(array);
-
+            // Nate was debugging here
+            int[] array = { 1, 7, 3, 5, 6 };
+            int[] result = InsertionSort(array);
+            for (int i = 0; i < result.Length; i++)
+            {
+                Console.WriteLine(result[i]);
+            }
         }
 
         public static int[] InsertionSort(int[] arr)
@@ -18,7 +22,7 @@ namespace sorts
                 int j = i - 1;
                 int temp = arr[i];
 
-                while (j >= 0 && temp < arr[i])
+                while (j >= 0 && temp < arr[j])
                 {
                     arr[j + 1] = arr[j];
                     j = j - 1;

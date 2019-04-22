@@ -40,10 +40,10 @@ namespace XUnitTestProject1
         }
 
         [Fact]
-        public void CanReturnONeSameSingleElement()
+        public void CanReturnOneSameSingleElement()
         {
-            int[] arr = { 1, 2, 3, 7, 5 };
-            int[] sorted = {3};
+            int[] arr = { 3 };
+            int[] sorted = { 3 };
             Assert.Equal(sorted, Program.InsertionSort(arr));
         }
     }
