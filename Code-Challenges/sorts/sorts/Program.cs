@@ -6,7 +6,9 @@ namespace sorts
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] array = { 1, 2, 3, 5, 7 };
+            InsertionSort(array);
+
         }
 
         public static int[] InsertionSort(int[] arr)
@@ -20,7 +22,6 @@ namespace sorts
                 {
                     arr[j + 1] = arr[j];
                     j = j - 1;
-
                 }
                 arr[j + 1] = temp;
             }
