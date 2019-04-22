@@ -145,5 +145,29 @@ namespace Tree.Classes
             ValueList.Add(node.Value);
         }
 
+        public int FindMaximumValue()
+        {
+            Node current = Root;
+            int maxVal = current.Value;
+            if (current.Left != null)
+            {
+                if (current.Left.Value > maxVal)
+                {
+                    maxVal = current.Left.Value;
+                }
+                PreorderRecurs(current.Left);
+            }
+
+            if (current.Right != null)
+            {
+
+                if (current.Right.Value > maxVal)
+                {
+                     maxVal = current.Right.Value;
+                }
+                PreorderRecurs(current.Right);
+            }
+            return maxVal;
+        }
     }    
 }
