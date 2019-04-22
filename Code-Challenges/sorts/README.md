@@ -20,10 +20,15 @@ based off this Psuedo Code
 ```
 
 - [X] InsertSort build out
-- [ ] 5 testing params met, passing
+- [X] 5 testing params met, passing
+
+#### Time and Efficiency 
+Space: O(1) do not create anything significant when calling this method
+Time: O(n^2) when sort is ran on the array, it runs nested loops.
 
 ## Architecture
 Microsoft Visual Studio Community
+
 Xunit
 
 ## Change Log
