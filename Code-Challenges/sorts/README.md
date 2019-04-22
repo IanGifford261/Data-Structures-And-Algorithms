@@ -16,7 +16,8 @@ based off this Psuedo Code
 7.					arr[j + 1] <-- arr[j]
 8.					j <-- j - 1
 9.
-10.				arr[j + 1] <-- temp ```
+10.				arr[j + 1] <-- temp
+```
 
 - [X] InsertSort build out
 - [ ] 5 testing params met, passing
