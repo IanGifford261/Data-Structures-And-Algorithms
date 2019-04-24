@@ -46,5 +46,7 @@ namespace XUnitTestProject1
             int[] sorted = { 3 };
             Assert.Equal(sorted, Program.InsertionSort(arr));
         }
+
+
     }
 }

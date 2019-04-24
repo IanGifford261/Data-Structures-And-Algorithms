@@ -43,7 +43,7 @@ namespace sorts
         /// </summary>
         /// <param name="arr"> the value for int[] </param>
         /// <returns></returns>
-        public static int[] MergeSort(int[] arr)
+        public static void MergeSort(int[] arr)
         {
             int n = arr.Length;
             
@@ -59,10 +59,9 @@ namespace sorts
 
                 MergeSort(subLeftArr);
                 MergeSort(subRightArr);
-                //Merge((subLeftArr, subRightArr, arr);
-                int[] merge = Merge(subLeftArr, subRightArr, arr);
-            }
-            return merge;
+
+                Merge(subLeftArr, subRightArr, arr);
+            }       
         }
 
         public static int[] Merge(int[] subLeftArr, int[] subRightArr, int[] arr)
@@ -78,7 +77,14 @@ namespace sorts
                     arr[k] = subLeftArr[i];
                     i++;
                 }
+                else
+                {
+                    arr[k] = subRightArr[j];
+                    j++;
+                }
+                k++;
             }
+            return arr;
 
         }
     }
