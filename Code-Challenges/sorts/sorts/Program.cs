@@ -6,9 +6,9 @@ namespace sorts
     {
         public static void Main(string[] args)
         {
-            // Nate was debugging here
             int[] array = { 1, 7, 3, 5, 6 };
-            int[] result = InsertionSort(array);
+            //int[] result = InsertionSort(array);
+            int[] result = MergeSort(array);
             for (int i = 0; i < result.Length; i++)
             {
                 Console.WriteLine(result[i]);
@@ -38,9 +38,26 @@ namespace sorts
             return arr;
         }
 
+        /// <summary>
+        /// Divides the array recursibely, merges the sub arrays
+        /// </summary>
+        /// <param name="arr"> the value for int[] </param>
+        /// <returns></returns>
         public static int[] MergeSort(int[] arr)
         {
+            int n = arr.Length;
 
+            if (n > 1)
+            {
+                int mP = arr.Length / 2;
+
+                int leftArr = mP + n;
+                int rightArr = mP - n;
+
+
+            }
         }
+
+
     }
 }
