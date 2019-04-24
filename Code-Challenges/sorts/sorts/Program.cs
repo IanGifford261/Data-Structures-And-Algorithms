@@ -46,18 +46,40 @@ namespace sorts
         public static int[] MergeSort(int[] arr)
         {
             int n = arr.Length;
-
+            
             if (n > 1)
             {
                 int mP = arr.Length / 2;
 
-                int leftArr = mP + n;
-                int rightArr = mP - n;
+                int subLeftArrLength = mP + n;
+                int subRightArrLength = mP - n;
 
+                int[] subLeftArr = new int[subLeftArrLength];
+                int[] subRightArr = new int[subRightArrLength];
 
+                MergeSort(subLeftArr);
+                MergeSort(subRightArr);
+                //Merge((subLeftArr, subRightArr, arr);
+                int[] merge = Merge(subLeftArr, subRightArr, arr);
             }
+            return merge;
         }
 
+        public static int[] Merge(int[] subLeftArr, int[] subRightArr, int[] arr)
+        {
+            int i = 0;
+            int j = 0;
+            int k = 0;
 
+            while (i < subLeftArr.Length && j < subRightArr.Length)
+            {
+                if (subLeftArr[i] <= subRightArr[j])
+                {
+                    arr[k] = subLeftArr[i];
+                    i++;
+                }
+            }
+
+        }
     }
 }
