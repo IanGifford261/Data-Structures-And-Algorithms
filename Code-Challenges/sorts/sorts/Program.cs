@@ -15,6 +15,11 @@ namespace sorts
             }
         }
 
+        /// <summary>
+        /// Takes an array of integers, and returns a sorted array
+        /// </summary>
+        /// <param name="arr"> the value for int[] </param>
+        /// <returns> a sorted int[] arr </returns>
         public static int[] InsertionSort(int[] arr)
         {
             for (int i = 1; i < arr.Length; i++)
@@ -26,10 +31,16 @@ namespace sorts
                 {
                     arr[j + 1] = arr[j];
                     j = j - 1;
+
                 }
                 arr[j + 1] = temp;
             }
             return arr;
+        }
+
+        public static int[] MergeSort(int[] arr)
+        {
+
         }
     }
 }
