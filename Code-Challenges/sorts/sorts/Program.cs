@@ -7,12 +7,13 @@ namespace sorts
         public static void Main(string[] args)
         {
             int[] array = { 1, 7, 3, 5, 6 };
+
             //int[] result = InsertionSort(array);
-            int[] result = MergeSort(array);
-            for (int i = 0; i < result.Length; i++)
-            {
-                Console.WriteLine(result[i]);
-            }
+            //int[] result = MergeSort(array);
+            //for (int i = 0; i < result.Length; i++)
+            //{
+            //    Console.WriteLine(result[i]);
+            //}
         }
 
         /// <summary>
@@ -64,6 +65,13 @@ namespace sorts
             }       
         }
 
+        /// <summary>
+        /// Merge algo that merges the sub arrays
+        /// </summary>
+        /// <param name="subLeftArr"></param>
+        /// <param name="subRightArr"></param>
+        /// <param name="arr"></param>
+        /// <returns></returns>
         public static int[] Merge(int[] subLeftArr, int[] subRightArr, int[] arr)
         {
             int i = 0;
@@ -86,6 +94,59 @@ namespace sorts
             }
             return arr;
 
+        }
+
+        /// <summary>
+        /// QuickSort logic recursively on an array
+        /// </summary>
+        /// <param name="arr"> the value for int[] </param>
+        /// <param name="left"> left element in array </param>
+        /// <param name="right"> right element in array </param>
+        public static void QuickSort(int[] arr, int left, int right)
+        {
+            if (left < right)
+            {
+                int position = Partition(arr, left, right);
+                QuickSort(arr, left, position - 1);
+                QuickSort(arr, position + 1, right);
+            }
+        }
+
+        /// <summary>
+        /// Partitions the array based of the declared pivot point
+        /// </summary>
+        /// <param name="arr"> the value for int[] </param>
+        /// <param name="left"> left element in array </param>
+        /// <param name="right"> right element in array </param>
+        /// <returns></returns>
+        public static int Partition(int[] arr, int left, int right)
+        {
+            int pivot = arr[right];
+            int low = left - 1;
+
+            for (int i = left; i < right; i++)
+            {
+                if (arr[i] <= pivot)
+                {
+                    low++;
+                    Swap(arr, i, low);
+                    Swap(arr, right, low + 1);
+                }
+            }
+            return low + 1;
+        }
+
+        /// <summary>
+        /// swaps values in the array
+        /// </summary>
+        /// <param name="arr"> the value for int[] </param>
+        /// <param name="i"> indec of input </param>
+        /// <param name="low"> left of furthest left index pointer</param>
+        public static void Swap(int[] arr, int i, int low)
+        {
+            int temp = arr[i];
+            arr[i] = arr[low];
+            arr[low] = temp;
         }
     }
 }
