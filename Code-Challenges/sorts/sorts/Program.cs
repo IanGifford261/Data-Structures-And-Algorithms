@@ -7,12 +7,13 @@ namespace sorts
         public static void Main(string[] args)
         {
             int[] array = { 1, 7, 3, 5, 6 };
+
             //int[] result = InsertionSort(array);
-            int[] result = MergeSort(array);
-            for (int i = 0; i < result.Length; i++)
-            {
-                Console.WriteLine(result[i]);
-            }
+            //int[] result = MergeSort(array);
+            //for (int i = 0; i < result.Length; i++)
+            //{
+            //    Console.WriteLine(result[i]);
+            //}
         }
 
         /// <summary>
@@ -85,6 +86,20 @@ namespace sorts
                 k++;
             }
             return arr;
+
+        }
+
+        public static int[] QuickSort(int[] arr, int left, int right)
+        {
+            if (left < right)
+            {
+
+            }
+        }
+
+        public static int[] Partition(int[] arr, int left, int right)
+        {
+
 
         }
     }
