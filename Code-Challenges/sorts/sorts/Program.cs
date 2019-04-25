@@ -66,7 +66,7 @@ namespace sorts
         }
 
         /// <summary>
-        /// 
+        /// Merge algo that merges the sub arrays
         /// </summary>
         /// <param name="subLeftArr"></param>
         /// <param name="subRightArr"></param>
@@ -97,12 +97,11 @@ namespace sorts
         }
 
         /// <summary>
-        /// 
+        /// QuickSort logic recursively on an array
         /// </summary>
-        /// <param name="arr"></param>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
-        /// <returns></returns>
+        /// <param name="arr"> the value for int[] </param>
+        /// <param name="left"> left element in array </param>
+        /// <param name="right"> right element in array </param>
         public static void QuickSort(int[] arr, int left, int right)
         {
             if (left < right)
@@ -110,16 +109,15 @@ namespace sorts
                 int position = Partition(arr, left, right);
                 QuickSort(arr, left, position - 1);
                 QuickSort(arr, position + 1, right);
-
             }
         }
 
         /// <summary>
-        /// 
+        /// Partitions the array based of the declared pivot point
         /// </summary>
-        /// <param name="arr"></param>
-        /// <param name="left"></param>
-        /// <param name="right"></param>
+        /// <param name="arr"> the value for int[] </param>
+        /// <param name="left"> left element in array </param>
+        /// <param name="right"> right element in array </param>
         /// <returns></returns>
         public static int Partition(int[] arr, int left, int right)
         {
@@ -138,6 +136,12 @@ namespace sorts
             return low + 1;
         }
 
+        /// <summary>
+        /// swaps values in the array
+        /// </summary>
+        /// <param name="arr"> the value for int[] </param>
+        /// <param name="i"> indec of input </param>
+        /// <param name="low"> left of furthest left index pointer</param>
         public static void Swap(int[] arr, int i, int low)
         {
             int temp = arr[i];
