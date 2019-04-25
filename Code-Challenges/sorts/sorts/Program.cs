@@ -103,10 +103,13 @@ namespace sorts
         /// <param name="left"></param>
         /// <param name="right"></param>
         /// <returns></returns>
-        public static int[] QuickSort(int[] arr, int left, int right)
+        public static void QuickSort(int[] arr, int left, int right)
         {
             if (left < right)
             {
+                int position = Partition(arr, left, right);
+                QuickSort(arr, left, position - 1);
+                QuickSort(arr, position + 1, right);
 
             }
         }
@@ -130,7 +133,6 @@ namespace sorts
                     low++;
                     Swap(arr, i, low);
                     Swap(arr, right, low + 1);
-
                 }
             }
             return low + 1;
