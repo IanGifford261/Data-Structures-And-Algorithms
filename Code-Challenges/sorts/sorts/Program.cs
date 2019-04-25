@@ -65,6 +65,13 @@ namespace sorts
             }       
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="subLeftArr"></param>
+        /// <param name="subRightArr"></param>
+        /// <param name="arr"></param>
+        /// <returns></returns>
         public static int[] Merge(int[] subLeftArr, int[] subRightArr, int[] arr)
         {
             int i = 0;
@@ -89,6 +96,13 @@ namespace sorts
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
         public static int[] QuickSort(int[] arr, int left, int right)
         {
             if (left < right)
@@ -97,9 +111,26 @@ namespace sorts
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <returns></returns>
         public static int[] Partition(int[] arr, int left, int right)
         {
+            int pivot = arr[right];
+            int low = left - 1;
 
+            for (int i = left; i < right; i++)
+            {
+                if (arr[i] <= pivot)
+                {
+                    low++;
+                    
+                }
+            }
 
         }
     }
