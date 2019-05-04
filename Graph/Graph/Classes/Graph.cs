@@ -4,8 +4,38 @@ using System.Text;
 
 namespace Graph.Classes
 {
-    public class Graph
+    public class Graph<T>
     {
+        public Dictionary<Vertex<T>, List<Edge<T>>> AdjacencyList { get; set; }
+        public int _size = 0;
 
+        public Graph()
+        {
+            AdjacencyList = new Dictionary<Vertex<T>, List<Edge<T>>>();
+        }
+
+        public Vertex<T> AddVertice(T value)
+        {
+            Vertex<T> vertex = new Vertex<T>(value);
+            AdjacencyList.Add(vertex, new List<Edge<T>>());
+            _size++;
+            return vertex;
+        }
+
+        public void AddDirectedEdge(Vertex<T> a, Vertex<T> b, int weight)
+        {
+            AdjacencyList[a].Add(new Edge<T>
+            {
+                Weight = weight,
+                Vertex = b
+            });
+        }
+
+        public void AddUndirectedEdge(Vertex<T> a, Vertex<T> b, int weight)
+        {
+            AddDirectedEdge(a, b, weight);
+            AddDirectedEdge(b, a, weight);
+
+        }
     }
 }
