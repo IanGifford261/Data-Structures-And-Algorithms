@@ -37,5 +37,18 @@ namespace Graph.Classes
             AddDirectedEdge(b, a, weight);
 
         }
+
+        public void Print()
+        {
+            foreach (var vertex in AdjacencyList)
+            {
+                Console.Write($"Vertex: {vertex.Key.Value} ->");
+                foreach (var edge in vertex.Value)
+                {
+                    Console.Write($"{edge.Vertex.Value}, {edge.Weight} ->");
+                }
+                Console.WriteLine("null");
+            }
+        }
     }
 }
