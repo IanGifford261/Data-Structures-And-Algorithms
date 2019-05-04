@@ -38,6 +38,16 @@ namespace Graph.Classes
 
         }
 
+        public List<Vertex<T>> GetVertices()
+        {
+            List<Vertex<T>> vertexes = new List<Vertex<T>>();
+            foreach (var vertice in AdjacencyList.Keys)
+            {
+                vertexes.Add(vertice);
+            }
+            return vertexes;
+        }
+
         public void Print()
         {
             foreach (var vertex in AdjacencyList)
