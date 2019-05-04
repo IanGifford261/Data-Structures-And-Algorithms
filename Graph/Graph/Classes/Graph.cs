@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Graph.Classes
 {
-    class Graph
+    public class Graph
     {
+
     }
 }
