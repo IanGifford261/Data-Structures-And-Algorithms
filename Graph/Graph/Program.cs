@@ -17,8 +17,10 @@ namespace Graph
             graph.AddUndirectedEdge(b, c, 5);
             graph.AddUndirectedEdge(c, d, 5);
             graph.AddUndirectedEdge(d, a, 5);
-
             graph.Print();
+            graph.Neighbors(b);
+
+            
         }
     }
 }
