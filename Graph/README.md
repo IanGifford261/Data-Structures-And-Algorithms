@@ -14,6 +14,8 @@ creating a new list and queue
 ## Graph Whiteboards
 ![Extend](https://github.com/IanGifford261/Data-Structures-And-Algorithms/blob/master/Assets/alexandian.jpg)
 
+![ArrayAndGraph](https://github.com/IanGifford261/Data-Structures-And-Algorithms/blob/master/Assets/AleksanderandIan.jpg)
+
 ## Architecture
 Microsoft Visual Studio Community
 Xunit
